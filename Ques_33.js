@@ -1,8 +1,9 @@
-let str = "I am a string in JavaScript";
-let word = "string";
+let str = "I am a Script String of  String  World";
+let word = "String";
 let k = " ";
 let n = 0;
-for (let i = 0; i < str.length; i++) {
+let c=0
+for (let i=0;i<str.length;i++) {
   if (str[i] == "S") {
     k = i;
     n=0;
@@ -14,8 +15,8 @@ for (let i = 0; i < str.length; i++) {
       n++;
     }
     if(match){
-      console.log(i);
-      break;
+        c++;      
     }
   }
 }
+console.log(c);

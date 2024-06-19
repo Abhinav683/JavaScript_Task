@@ -1,9 +1,9 @@
-let str16 = "I am Abhinav_Sharma";
+let str16 = "I am abhinav_sharma";
 
-let count_occ = "a";
+let occ = "a";
 let count3 = 0;
 for (let co = 0; co < str16.length; co++) {
-  if (str16[co] == all_occ) {
+  if (str16[co] == occ) {
     count3++;
   }
 }

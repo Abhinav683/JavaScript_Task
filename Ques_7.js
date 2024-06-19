@@ -1,3 +1,11 @@
-let str4 = "my string2";
-let str6 = str4.toUpperCase();
-console.log(str6);
+let a="hello";
+let str=""
+for(let i=0;i<a.length;i++)
+    {
+        let c=a.charCodeAt(i)
+        if(c>=97 && c<=122)
+           { c=c-32;
+           
+           str=str+String.fromCharCode(c)}
+    }
+    console.log(str);

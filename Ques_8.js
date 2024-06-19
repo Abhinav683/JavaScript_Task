@@ -1,4 +1,4 @@
-let a="HELLO";
+let a="HeLlO";
 let str=""
 for(let i=0;i<a.length;i++)
     {
@@ -7,5 +7,10 @@ for(let i=0;i<a.length;i++)
            { c=c+32;
            
            str=str+String.fromCharCode(c)}
+          
+          else if(c>=97 && c<=122)
+              { c=c-32;
+              
+              str=str+String.fromCharCode(c)}
     }
     console.log(str);

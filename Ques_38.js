@@ -1,12 +1,15 @@
-let  str37="abhinav Sharma  "
-console.log("Trim last");
-for(let i=str37.length;i>0;i--)
-  {
-    if(str37[i]==" ")
-      {str37=str37.substring(i+1)
-        i++;
-      }
-    else
-      break;
+function trim_trailing(str) {
+  let a = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== " ") {
+      a = i;
+    }
   }
-  console.log(str37.length);
+  let v = "";
+  for (let i = 0; i <= a; i++) {
+    v = v + str[i];
+  }
+  return v;
+}
+
+console.log(trim_trailing("This is a String  "));

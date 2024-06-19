@@ -1,3 +1,4 @@
+str15="abhinav sharma"
 let all_occ = "a";
 let c;
 console.log("All Occurrence---");

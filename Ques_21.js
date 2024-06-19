@@ -1,5 +1,6 @@
 let str18 = "Obdure Infotech";
-let l=0;
+let count6=0;
+count5=0;
 for (let i = 0; i < str18.length; i++) {
     count5=0;
   for (let j = 1; j < str18.length; j++) {
@@ -12,4 +13,4 @@ for (let i = 0; i < str18.length; i++) {
     l=i;
   }
 }
-console.log("Logest  Frequency Element = " ,str18[l]);
+console.log(str18[l]);

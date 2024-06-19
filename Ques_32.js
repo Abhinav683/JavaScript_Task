@@ -1,8 +1,8 @@
-let str = "I am a string in JavaScript";
-let word = "string";
+let str = "I am a String of  String World String";
+let word = "String";
 let k = " ";
 let n = 0;
-for (let i = 0; i < str.length; i++) {
+for (let i=0;i<str.length;i++) {
   if (str[i] == "S") {
     k = i;
     n=0;
@@ -14,8 +14,8 @@ for (let i = 0; i < str.length; i++) {
       n++;
     }
     if(match){
-      console.log(i);
-      break;
+      console.log(i,i+word.length);
+      
     }
   }
 }

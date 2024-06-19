@@ -1,12 +1,15 @@
-let  str36="  abhinav Sharma"
-console.log("Trim");
-for(let i=0;i<str36.length;i++)
-  {
-    if(str36[i]==" ")
-      {str36=str36.substring(i+1)
-        i--;
-      }
-    else
+function trim_leading(str) {
+  let a = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== " ") {
+      a = i;
       break;
+    }
   }
- console.log(str36);
+  let v = "";
+  for (let i = a; i <str.length; i++) {
+    v = v + str[i];
+  }
+  return v;
+}
+console.log(trim_leading("  This is a String"));

@@ -1,18 +1,15 @@
-
-let str30= "obdureInfotech";
-let rep="S"
-let flag=0
-console.log("Remove First Occurrence with another---");
-for(let i=0;i<str30.length;i++)
-  {
-    for(let j=1;j<str30.length;j++)
-    {  if(str30[i]=="e")
-      {  str30 = str30.substring(0,i)+"S"+str30.substring(i+1,str30.length)
-        console.log(str30);
-        flag=1;
-        break;
+function replace(str, c,d) {
+  let str2 = '';
+  let flag= false;
+  for (let i = 0; i < str.length; i++) {
+      if (str[i] === c && !flag) {
+          flag = true;
+          str2=str2+d;
       }
-    }
-if(flag==1)
-  break;
+      else
+      str2 = str2+str[i];
   }
+
+  return str2;
+}
+console.log(replace("this is a string","s","A"));
